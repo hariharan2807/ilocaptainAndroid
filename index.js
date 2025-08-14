@@ -13,7 +13,7 @@ Text.defaultProps.allowFontScaling = false;
 TextInput.defaultProps = TextInput.defaultProps || {};
 TextInput.defaultProps.allowFontScaling = false;
 
-OneSignal.setAppId('f325aa88-d4df-4a4e-9bb9-e83e8728ad27');
+OneSignal.setAppId('a6669b6a-d91b-4e08-bbf0-a3f29217302a');
 // OneSignal.Debug.setLogLevel(LogLevel.Verbose);
 OneSignal.setLogLevel(6, 0);
 

@@ -43,7 +43,7 @@ import {ModalComp} from '@sharedComponents';
 import store from '../../store';
 import Modal from 'react-native-modal';
 import assets_manifest from '@assets';
-import {OneSignal} from 'react-native-onesignal';
+import OneSignal from 'react-native-onesignal';
 
 export default function DashboardScreen() {
   const navigation = useNavigation();
@@ -311,23 +311,25 @@ export default function DashboardScreen() {
         const phone = String(CartState.driver_phone_number ?? '');
         const name = String(CartState.driver_name ?? '');
         const email = String(CartState.driver_email ?? '');
+        OneSignal.sendTag('user_name', name);
+        OneSignal.setEmail('email', email);
+        OneSignal.setExternalUserId(`${driverId}`);
+        // if (driverId) {
+        //   OneSignal.login(driverId); 
+        // }
   
-        if (driverId) {
-          OneSignal.login(driverId); 
-        }
-  
-        if (email) {
-          OneSignal.User.addEmail(email);
-        }
-        if (phone) {
-          OneSignal.User.addSms(phone);
-        }
-        if (name) {
-          OneSignal.User.addTag('user_name', name);
-        }
-        if (email) {
-          OneSignal.User.addTag('user_mail', email);
-        }
+        // if (email) {
+        //   OneSignal.User.addEmail(email);
+        // }
+        // if (phone) {
+        //   OneSignal.User.addSms(phone);
+        // }
+        // if (name) {
+        //   OneSignal.User.addTag('user_name', name);
+        // }
+        // if (email) {
+        //   OneSignal.User.addTag('user_mail', email);
+        // }
       } catch (error) {
         console.error('OneSignal setup error:', error);
       }

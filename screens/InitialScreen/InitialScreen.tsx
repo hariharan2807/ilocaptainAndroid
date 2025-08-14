@@ -99,12 +99,12 @@ export default function InitialScreen() {
   return (
     <View style={{flex: 1}}>
       <View style={[tailwind('flex-1 justify-center items-center')]}>
-        {/* <LottieView
+        <LottieView
           source={require('../../assets/gif/load.json')}
           autoPlay
           loop
           style={{width: 80, height: 80}}
-        /> */}
+        />
         {/* <FastImage
           source={require('../../assets/gif/ini.gif')}
           style={{

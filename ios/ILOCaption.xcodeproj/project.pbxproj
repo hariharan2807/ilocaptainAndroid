@@ -18,7 +18,6 @@
 		28DBFBF90D064FD2A3D0B8AB /* Milliard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FBC1383D1E58468F8F1B291D /* Milliard-Bold.otf */; };
 		2B421BF7BDA4905192F5578A /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		7699B88040F8A987B510C191 /* libPods-ILOCaption-ILOCaptionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-ILOCaption-ILOCaptionTests.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8900E30E92B34A139D1E23F0 /* Nunito-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77AD5C30819F435A94DCB8FA /* Nunito-Medium.ttf */; };
 		BC5C98F9288C41A09509EE45 /* Milliard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = F79ECC0E5E90401698AB0908 /* Milliard-Light.otf */; };
 		D160B72D935149908A47CA25 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D15AA38E633B45ADB102548B /* Nunito-SemiBold.ttf */; };
@@ -71,7 +70,6 @@
 		5B7EB9410499542E8C5724F5 /* Pods-ILOCaption-ILOCaptionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ILOCaption-ILOCaptionTests.debug.xcconfig"; path = "Target Support Files/Pods-ILOCaption-ILOCaptionTests/Pods-ILOCaption-ILOCaptionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-ILOCaption.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ILOCaption.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77AD5C30819F435A94DCB8FA /* Nunito-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Medium.ttf"; path = "../assets/fonts/Nunito-Medium.ttf"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ILOCaption/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-ILOCaption-ILOCaptionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ILOCaption-ILOCaptionTests.release.xcconfig"; path = "Target Support Files/Pods-ILOCaption-ILOCaptionTests/Pods-ILOCaption-ILOCaptionTests.release.xcconfig"; sourceTree = "<group>"; };
 		9DA3820CAFCE4F6192F923AA /* Nunito-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Light.ttf"; path = "../assets/fonts/Nunito-Light.ttf"; sourceTree = "<group>"; };
 		D15AA38E633B45ADB102548B /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-SemiBold.ttf"; path = "../assets/fonts/Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -127,7 +125,6 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 			);
@@ -299,7 +296,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				2B421BF7BDA4905192F5578A /* PrivacyInfo.xcprivacy in Resources */,
 				054D51842DB7A57F0037DF7D /* notification.wav in Resources */,

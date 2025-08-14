@@ -1,0 +1,134 @@
+{
+  "project_info": {
+    "project_number": "328454898670",
+    "project_id": "ilo-customer",
+    "storage_bucket": "ilo-customer.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328454898670:android:a38d44643a14dda48c04ff",
+        "android_client_info": {
+          "package_name": "com.ilo.caption"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328454898670-97b4ps44qv96epf362m1a3hpvdotas7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDs-vPcTrH2j2dfNqMBUwGE1aCiGlEgTw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "328454898670-97b4ps44qv96epf362m1a3hpvdotas7n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "328454898670-5ao9j2td31t8dd0r1pk481f2a31t52ad.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ilo.user"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328454898670:android:e2ffcec3f0be34528c04ff",
+        "android_client_info": {
+          "package_name": "com.ilo.ios"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328454898670-97b4ps44qv96epf362m1a3hpvdotas7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDs-vPcTrH2j2dfNqMBUwGE1aCiGlEgTw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "328454898670-97b4ps44qv96epf362m1a3hpvdotas7n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "328454898670-5ao9j2td31t8dd0r1pk481f2a31t52ad.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ilo.user"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328454898670:android:3b39759dc525ce7f8c04ff",
+        "android_client_info": {
+          "package_name": "com.ilo.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328454898670-9kdv6c0hqac30rus8fp5s0136kjfcqcn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ilo.user",
+            "certificate_hash": "23a239f206b99fdc8232454be6db80a92f4ecb40"
+          }
+        },
+        {
+          "client_id": "328454898670-qvnqi7gng1685r2e798e6mt9avjql1ni.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ilo.user",
+            "certificate_hash": "d18e818f9c22049f75fd2633944ba1c636afbbaf"
+          }
+        },
+        {
+          "client_id": "328454898670-97b4ps44qv96epf362m1a3hpvdotas7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDs-vPcTrH2j2dfNqMBUwGE1aCiGlEgTw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "328454898670-97b4ps44qv96epf362m1a3hpvdotas7n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "328454898670-5ao9j2td31t8dd0r1pk481f2a31t52ad.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ilo.user"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

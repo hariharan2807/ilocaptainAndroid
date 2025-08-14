@@ -96,7 +96,7 @@ export default function LoginScreen() {
         enableOnAndroid={true}>
         <View style={[tailwind('mx-3'), {marginTop: height / 9}]}>
           <View style={[tailwind('items-center '), {}]}>
-            <Text style={[tailwind('font-bold font-20'), {}]}>
+            <Text style={[tailwind('font-bold font-20 text-black'), {}]}>
               Enter Your Phone Number
             </Text>
             <Text style={[tailwind('font-medium font-13 text-gray mt-3'), {}]}>

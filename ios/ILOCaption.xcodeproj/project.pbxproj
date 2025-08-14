@@ -7,25 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* FruttaClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FruttaClientTests.m */; };
+		0021855D1AF0445DB6FC3C71 /* Milliard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32D73A2E74284D12B2BA070B /* Milliard-SemiBold.otf */; };
+		00E356F31AD99517003FC87E /* ILOCaptionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ILOCaptionTests.m */; };
 		054D51842DB7A57F0037DF7D /* notification.wav in Resources */ = {isa = PBXBuildFile; fileRef = 054D51832DB7A57F0037DF7D /* notification.wav */; };
-		05ADA1D62D03009D00E051A3 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ADA1D52D03009D00E051A3 /* NotificationService.swift */; };
-		05ADA1DA2D03009D00E051A3 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 05ADA1D32D03009D00E051A3 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		0C80B921A6F3F58F76C31292 /* libPods-FruttaClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-FruttaClient.a */; };
+		0BFB20F94A29419FBA3509D3 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7031E7452CD4DFFA1A1C93A /* Nunito-Bold.ttf */; };
+		0C80B921A6F3F58F76C31292 /* libPods-ILOCaption.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-ILOCaption.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2B421BF7BDA4905192F5578A /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
-		7699B88040F8A987B510C191 /* libPods-FruttaClient-FruttaClientTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-FruttaClient-FruttaClientTests.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		28DBFBF90D064FD2A3D0B8AB /* Milliard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FBC1383D1E58468F8F1B291D /* Milliard-Bold.otf */; };
-		BC5C98F9288C41A09509EE45 /* Milliard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = F79ECC0E5E90401698AB0908 /* Milliard-Light.otf */; };
-		F26C5E9E726D4407B2D92C3F /* Milliard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A26202AECF946129F67CE7D /* Milliard-Medium.otf */; };
-		0021855D1AF0445DB6FC3C71 /* Milliard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32D73A2E74284D12B2BA070B /* Milliard-SemiBold.otf */; };
-		0BFB20F94A29419FBA3509D3 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7031E7452CD4DFFA1A1C93A /* Nunito-Bold.ttf */; };
-		F5008E85F2654AF58D43707E /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DA3820CAFCE4F6192F923AA /* Nunito-Light.ttf */; };
+		2B421BF7BDA4905192F5578A /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		7699B88040F8A987B510C191 /* libPods-ILOCaption-ILOCaptionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-ILOCaption-ILOCaptionTests.a */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8900E30E92B34A139D1E23F0 /* Nunito-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77AD5C30819F435A94DCB8FA /* Nunito-Medium.ttf */; };
+		BC5C98F9288C41A09509EE45 /* Milliard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = F79ECC0E5E90401698AB0908 /* Milliard-Light.otf */; };
 		D160B72D935149908A47CA25 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D15AA38E633B45ADB102548B /* Nunito-SemiBold.ttf */; };
+		F26C5E9E726D4407B2D92C3F /* Milliard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A26202AECF946129F67CE7D /* Milliard-Medium.otf */; };
+		F5008E85F2654AF58D43707E /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DA3820CAFCE4F6192F923AA /* Nunito-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +32,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = FruttaClient;
-		};
-		05ADA1D82D03009D00E051A3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 05ADA1D22D03009D00E051A3;
-			remoteInfo = OneSignalNotificationServiceExtension;
+			remoteInfo = ILOCaption;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -52,7 +43,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				05ADA1DA2D03009D00E051A3 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,38 +50,35 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* FruttaClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruttaClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* ILOCaptionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ILOCaptionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* FruttaClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FruttaClientTests.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* ILOCaptionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILOCaptionTests.m; sourceTree = "<group>"; };
 		054D51832DB7A57F0037DF7D /* notification.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = notification.wav; sourceTree = "<group>"; };
-		059C7D6F2D08010900496B89 /* FruttaClientRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = FruttaClientRelease.entitlements; path = FruttaClient/FruttaClientRelease.entitlements; sourceTree = "<group>"; };
-		059C7D702D0801C300496B89 /* OneSignalNotificationServiceExtensionRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtensionRelease.entitlements; sourceTree = "<group>"; };
-		05ADA1D32D03009D00E051A3 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		05ADA1D52D03009D00E051A3 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
-		05ADA1D72D03009D00E051A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* FruttaClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruttaClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = FruttaClient/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = FruttaClient/AppDelegate.mm; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FruttaClient/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FruttaClient/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = FruttaClient/main.m; sourceTree = "<group>"; };
-		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = FruttaClient/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-FruttaClient-FruttaClientTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FruttaClient-FruttaClientTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-FruttaClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruttaClient.debug.xcconfig"; path = "Target Support Files/Pods-FruttaClient/Pods-FruttaClient.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-FruttaClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruttaClient.release.xcconfig"; path = "Target Support Files/Pods-FruttaClient/Pods-FruttaClient.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-FruttaClient-FruttaClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruttaClient-FruttaClientTests.debug.xcconfig"; path = "Target Support Files/Pods-FruttaClient-FruttaClientTests/Pods-FruttaClient-FruttaClientTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-FruttaClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FruttaClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = FruttaClient/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-FruttaClient-FruttaClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruttaClient-FruttaClientTests.release.xcconfig"; path = "Target Support Files/Pods-FruttaClient-FruttaClientTests/Pods-FruttaClient-FruttaClientTests.release.xcconfig"; sourceTree = "<group>"; };
+		057C67842E4DDCE200621189 /* ILOCaptionDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = ILOCaptionDebug.entitlements; path = ILOCaption/ILOCaptionDebug.entitlements; sourceTree = "<group>"; };
+		059C7D6F2D08010900496B89 /* ILOCaptionRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = ILOCaptionRelease.entitlements; path = ILOCaption/ILOCaptionRelease.entitlements; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* ILOCaption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ILOCaption.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ILOCaption/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = ILOCaption/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ILOCaption/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ILOCaption/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ILOCaption/main.m; sourceTree = "<group>"; };
+		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = ILOCaption/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		19F6CBCC0A4E27FBF8BF4A61 /* libPods-ILOCaption-ILOCaptionTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ILOCaption-ILOCaptionTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32D73A2E74284D12B2BA070B /* Milliard-SemiBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Milliard-SemiBold.otf"; path = "../assets/fonts/Milliard-SemiBold.otf"; sourceTree = "<group>"; };
+		3B4392A12AC88292D35C810B /* Pods-ILOCaption.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ILOCaption.debug.xcconfig"; path = "Target Support Files/Pods-ILOCaption/Pods-ILOCaption.debug.xcconfig"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-ILOCaption.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ILOCaption.release.xcconfig"; path = "Target Support Files/Pods-ILOCaption/Pods-ILOCaption.release.xcconfig"; sourceTree = "<group>"; };
+		5A26202AECF946129F67CE7D /* Milliard-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Milliard-Medium.otf"; path = "../assets/fonts/Milliard-Medium.otf"; sourceTree = "<group>"; };
+		5B7EB9410499542E8C5724F5 /* Pods-ILOCaption-ILOCaptionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ILOCaption-ILOCaptionTests.debug.xcconfig"; path = "Target Support Files/Pods-ILOCaption-ILOCaptionTests/Pods-ILOCaption-ILOCaptionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DCACB8F33CDC322A6C60F78 /* libPods-ILOCaption.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ILOCaption.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77AD5C30819F435A94DCB8FA /* Nunito-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Medium.ttf"; path = "../assets/fonts/Nunito-Medium.ttf"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ILOCaption/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89C6BE57DB24E9ADA2F236DE /* Pods-ILOCaption-ILOCaptionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ILOCaption-ILOCaptionTests.release.xcconfig"; path = "Target Support Files/Pods-ILOCaption-ILOCaptionTests/Pods-ILOCaption-ILOCaptionTests.release.xcconfig"; sourceTree = "<group>"; };
+		9DA3820CAFCE4F6192F923AA /* Nunito-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Light.ttf"; path = "../assets/fonts/Nunito-Light.ttf"; sourceTree = "<group>"; };
+		D15AA38E633B45ADB102548B /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-SemiBold.ttf"; path = "../assets/fonts/Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		D7031E7452CD4DFFA1A1C93A /* Nunito-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Bold.ttf"; path = "../assets/fonts/Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		FBC1383D1E58468F8F1B291D /* Milliard-Bold.otf */ = {isa = PBXFileReference; name = "Milliard-Bold.otf"; path = "../assets/fonts/Milliard-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F79ECC0E5E90401698AB0908 /* Milliard-Light.otf */ = {isa = PBXFileReference; name = "Milliard-Light.otf"; path = "../assets/fonts/Milliard-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		5A26202AECF946129F67CE7D /* Milliard-Medium.otf */ = {isa = PBXFileReference; name = "Milliard-Medium.otf"; path = "../assets/fonts/Milliard-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		32D73A2E74284D12B2BA070B /* Milliard-SemiBold.otf */ = {isa = PBXFileReference; name = "Milliard-SemiBold.otf"; path = "../assets/fonts/Milliard-SemiBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D7031E7452CD4DFFA1A1C93A /* Nunito-Bold.ttf */ = {isa = PBXFileReference; name = "Nunito-Bold.ttf"; path = "../assets/fonts/Nunito-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9DA3820CAFCE4F6192F923AA /* Nunito-Light.ttf */ = {isa = PBXFileReference; name = "Nunito-Light.ttf"; path = "../assets/fonts/Nunito-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		77AD5C30819F435A94DCB8FA /* Nunito-Medium.ttf */ = {isa = PBXFileReference; name = "Nunito-Medium.ttf"; path = "../assets/fonts/Nunito-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D15AA38E633B45ADB102548B /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; name = "Nunito-SemiBold.ttf"; path = "../assets/fonts/Nunito-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F79ECC0E5E90401698AB0908 /* Milliard-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Milliard-Light.otf"; path = "../assets/fonts/Milliard-Light.otf"; sourceTree = "<group>"; };
+		FBC1383D1E58468F8F1B291D /* Milliard-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Milliard-Bold.otf"; path = "../assets/fonts/Milliard-Bold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,14 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-FruttaClient-FruttaClientTests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		05ADA1D02D03009D00E051A3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				7699B88040F8A987B510C191 /* libPods-ILOCaption-ILOCaptionTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,20 +94,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-FruttaClient.a in Frameworks */,
+				0C80B921A6F3F58F76C31292 /* libPods-ILOCaption.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* FruttaClientTests */ = {
+		00E356EF1AD99517003FC87E /* ILOCaptionTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* FruttaClientTests.m */,
+				00E356F21AD99517003FC87E /* ILOCaptionTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = FruttaClientTests;
+			path = ILOCaptionTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -138,20 +118,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		05ADA1D42D03009D00E051A3 /* OneSignalNotificationServiceExtension */ = {
+		13B07FAE1A68108700A75B9A /* ILOCaption */ = {
 			isa = PBXGroup;
 			children = (
-				059C7D702D0801C300496B89 /* OneSignalNotificationServiceExtensionRelease.entitlements */,
-				05ADA1D52D03009D00E051A3 /* NotificationService.swift */,
-				05ADA1D72D03009D00E051A3 /* Info.plist */,
-			);
-			path = OneSignalNotificationServiceExtension;
-			sourceTree = "<group>";
-		};
-		13B07FAE1A68108700A75B9A /* FruttaClient */ = {
-			isa = PBXGroup;
-			children = (
-				059C7D6F2D08010900496B89 /* FruttaClientRelease.entitlements */,
+				057C67842E4DDCE200621189 /* ILOCaptionDebug.entitlements */,
+				059C7D6F2D08010900496B89 /* ILOCaptionRelease.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -160,15 +131,15 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 			);
-			name = FruttaClient;
+			name = ILOCaption;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-FruttaClient.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-FruttaClient-FruttaClientTests.a */,
+				5DCACB8F33CDC322A6C60F78 /* libPods-ILOCaption.a */,
+				19F6CBCC0A4E27FBF8BF4A61 /* libPods-ILOCaption-ILOCaptionTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -184,10 +155,9 @@
 			isa = PBXGroup;
 			children = (
 				054D51832DB7A57F0037DF7D /* notification.wav */,
-				13B07FAE1A68108700A75B9A /* FruttaClient */,
+				13B07FAE1A68108700A75B9A /* ILOCaption */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* FruttaClientTests */,
-				05ADA1D42D03009D00E051A3 /* OneSignalNotificationServiceExtension */,
+				00E356EF1AD99517003FC87E /* ILOCaptionTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -201,9 +171,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* FruttaClient.app */,
-				00E356EE1AD99517003FC87E /* FruttaClientTests.xctest */,
-				05ADA1D32D03009D00E051A3 /* OneSignalNotificationServiceExtension.appex */,
+				13B07F961A680F5B00A75B9A /* ILOCaption.app */,
+				00E356EE1AD99517003FC87E /* ILOCaptionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -221,16 +190,15 @@
 				D15AA38E633B45ADB102548B /* Nunito-SemiBold.ttf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-FruttaClient.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-FruttaClient.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-FruttaClient-FruttaClientTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-FruttaClient-FruttaClientTests.release.xcconfig */,
+				3B4392A12AC88292D35C810B /* Pods-ILOCaption.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-ILOCaption.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-ILOCaption-ILOCaptionTests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-ILOCaption-ILOCaptionTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -238,9 +206,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* FruttaClientTests */ = {
+		00E356ED1AD99517003FC87E /* ILOCaptionTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FruttaClientTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ILOCaptionTests" */;
 			buildPhases = (
 				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -254,31 +222,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = FruttaClientTests;
-			productName = FruttaClientTests;
-			productReference = 00E356EE1AD99517003FC87E /* FruttaClientTests.xctest */;
+			name = ILOCaptionTests;
+			productName = ILOCaptionTests;
+			productReference = 00E356EE1AD99517003FC87E /* ILOCaptionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		05ADA1D22D03009D00E051A3 /* OneSignalNotificationServiceExtension */ = {
+		13B07F861A680F5B00A75B9A /* ILOCaption */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 05ADA1DB2D03009D00E051A3 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
-			buildPhases = (
-				05ADA1CF2D03009D00E051A3 /* Sources */,
-				05ADA1D02D03009D00E051A3 /* Frameworks */,
-				05ADA1D12D03009D00E051A3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = OneSignalNotificationServiceExtension;
-			productName = OneSignalNotificationServiceExtension;
-			productReference = 05ADA1D32D03009D00E051A3 /* OneSignalNotificationServiceExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		13B07F861A680F5B00A75B9A /* FruttaClient */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FruttaClient" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ILOCaption" */;
 			buildPhases = (
 				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
@@ -293,11 +244,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				05ADA1D92D03009D00E051A3 /* PBXTargetDependency */,
 			);
-			name = FruttaClient;
-			productName = FruttaClient;
-			productReference = 13B07F961A680F5B00A75B9A /* FruttaClient.app */;
+			name = ILOCaption;
+			productName = ILOCaption;
+			productReference = 13B07F961A680F5B00A75B9A /* ILOCaption.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -313,15 +263,12 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
-					05ADA1D22D03009D00E051A3 = {
-						CreatedOnToolsVersion = 15.4;
-					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1120;
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "FruttaClient" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ILOCaption" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -334,22 +281,14 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* FruttaClient */,
-				00E356ED1AD99517003FC87E /* FruttaClientTests */,
-				05ADA1D22D03009D00E051A3 /* OneSignalNotificationServiceExtension */,
+				13B07F861A680F5B00A75B9A /* ILOCaption */,
+				00E356ED1AD99517003FC87E /* ILOCaptionTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		05ADA1D12D03009D00E051A3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -400,15 +339,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FruttaClient/Pods-FruttaClient-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ILOCaption/Pods-ILOCaption-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FruttaClient/Pods-FruttaClient-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ILOCaption/Pods-ILOCaption-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FruttaClient/Pods-FruttaClient-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ILOCaption/Pods-ILOCaption-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2A32848408732EFE9120CECA /* [CP-User] [RNFB] Core Configuration */ = {
@@ -439,7 +378,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FruttaClient-FruttaClientTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ILOCaption-ILOCaptionTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -461,7 +400,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FruttaClient-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ILOCaption-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -474,15 +413,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FruttaClient-FruttaClientTests/Pods-FruttaClient-FruttaClientTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ILOCaption-ILOCaptionTests/Pods-ILOCaption-ILOCaptionTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FruttaClient-FruttaClientTests/Pods-FruttaClient-FruttaClientTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ILOCaption-ILOCaptionTests/Pods-ILOCaption-ILOCaptionTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FruttaClient-FruttaClientTests/Pods-FruttaClient-FruttaClientTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ILOCaption-ILOCaptionTests/Pods-ILOCaption-ILOCaptionTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
@@ -491,15 +430,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FruttaClient/Pods-FruttaClient-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ILOCaption/Pods-ILOCaption-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FruttaClient/Pods-FruttaClient-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ILOCaption/Pods-ILOCaption-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FruttaClient/Pods-FruttaClient-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ILOCaption/Pods-ILOCaption-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
@@ -508,15 +447,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FruttaClient-FruttaClientTests/Pods-FruttaClient-FruttaClientTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ILOCaption-ILOCaptionTests/Pods-ILOCaption-ILOCaptionTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FruttaClient-FruttaClientTests/Pods-FruttaClient-FruttaClientTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ILOCaption-ILOCaptionTests/Pods-ILOCaption-ILOCaptionTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FruttaClient-FruttaClientTests/Pods-FruttaClient-FruttaClientTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ILOCaption-ILOCaptionTests/Pods-ILOCaption-ILOCaptionTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -526,15 +465,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* FruttaClientTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		05ADA1CF2D03009D00E051A3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				05ADA1D62D03009D00E051A3 /* NotificationService.swift in Sources */,
+				00E356F31AD99517003FC87E /* ILOCaptionTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,28 +483,23 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* FruttaClient */;
+			target = 13B07F861A680F5B00A75B9A /* ILOCaption */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
-		};
-		05ADA1D92D03009D00E051A3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 05ADA1D22D03009D00E051A3 /* OneSignalNotificationServiceExtension */;
-			targetProxy = 05ADA1D82D03009D00E051A3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-FruttaClient-FruttaClientTests.debug.xcconfig */;
+			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-ILOCaption-ILOCaptionTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = Y6G93454H2;
+				DEVELOPMENT_TEAM = V5L22ZZ8D6;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = FruttaClientTests/Info.plist;
+				INFOPLIST_FILE = ILOCaptionTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -585,20 +511,20 @@
 					"-lc++",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.frutta.client;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilo.caption;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FruttaClient.app/FruttaClient";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ILOCaption.app/ILOCaption";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-FruttaClient-FruttaClientTests.release.xcconfig */;
+			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-ILOCaption-ILOCaptionTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = Y6G93454H2;
-				INFOPLIST_FILE = FruttaClientTests/Info.plist;
+				DEVELOPMENT_TEAM = V5L22ZZ8D6;
+				INFOPLIST_FILE = ILOCaptionTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -610,106 +536,24 @@
 					"-lc++",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.frutta.client;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilo.caption;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FruttaClient.app/FruttaClient";
-			};
-			name = Release;
-		};
-		05ADA1DC2D03009D00E051A3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = Y6G93454H2;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.frutta.client.OneSignalNotificationServiceExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		05ADA1DD2D03009D00E051A3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtensionRelease.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Y6G93454H2;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.frutta.client.OneSignalNotificationServiceExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ILOCaption.app/ILOCaption";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-FruttaClient.debug.xcconfig */;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-ILOCaption.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ILOCaption/ILOCaptionDebug.entitlements;
 				CURRENT_PROJECT_VERSION = 11;
-				DEVELOPMENT_TEAM = Y6G93454H2;
+				DEVELOPMENT_TEAM = V5L22ZZ8D6;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = FruttaClient/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FruttaClient;
+				INFOPLIST_FILE = ILOCaption/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ILOCaption;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -722,8 +566,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.frutta.client;
-				PRODUCT_NAME = FruttaClient;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilo.caption;
+				PRODUCT_NAME = ILOCaption;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -732,16 +576,15 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-FruttaClient.release.xcconfig */;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-ILOCaption.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = FruttaClient/FruttaClientRelease.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ILOCaption/ILOCaptionRelease.entitlements;
 				CURRENT_PROJECT_VERSION = 11;
-				DEVELOPMENT_TEAM = Y6G93454H2;
-				INFOPLIST_FILE = FruttaClient/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FruttaClient;
+				DEVELOPMENT_TEAM = V5L22ZZ8D6;
+				INFOPLIST_FILE = ILOCaption/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ILOCaption;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -754,8 +597,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.frutta.client;
-				PRODUCT_NAME = FruttaClient;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilo.caption;
+				PRODUCT_NAME = ILOCaption;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -831,10 +674,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -904,10 +744,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -918,7 +755,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FruttaClientTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ILOCaptionTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -927,16 +764,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		05ADA1DB2D03009D00E051A3 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				05ADA1DC2D03009D00E051A3 /* Debug */,
-				05ADA1DD2D03009D00E051A3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FruttaClient" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ILOCaption" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -945,7 +773,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "FruttaClient" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ILOCaption" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

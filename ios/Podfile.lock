@@ -147,6 +147,10 @@ PODS:
   - libwebp/sharpyuv (1.3.2)
   - libwebp/webp (1.3.2):
     - libwebp/sharpyuv
+  - lottie-ios (3.4.4)
+  - lottie-react-native (5.1.6):
+    - lottie-ios (~> 3.4.0)
+    - React-Core
   - nanopb (2.30910.0):
     - nanopb/decode (= 2.30910.0)
     - nanopb/encode (= 2.30910.0)
@@ -163,6 +167,7 @@ PODS:
   - OneSignalXCFramework/OneSignalOutcomes (3.12.9):
     - OneSignalXCFramework/OneSignalCore
   - PromisesObjC (2.4.0)
+  - razorpay-pod (1.4.3)
   - RCT-Folly (2022.05.16.00):
     - boost
     - DoubleConversion
@@ -1036,6 +1041,10 @@ PODS:
     - React-debug
   - react-native-date-picker (5.0.2):
     - React-Core
+  - react-native-document-picker (9.3.1):
+    - glog
+    - RCT-Folly (= 2022.05.16.00)
+    - React-Core
   - react-native-geolocation (3.2.1):
     - glog
     - RCT-Folly (= 2022.05.16.00)
@@ -1057,6 +1066,9 @@ PODS:
     - glog
     - RCT-Folly (= 2022.05.16.00)
     - React-Core
+  - react-native-razorpay (2.3.0):
+    - razorpay-pod
+    - React
   - react-native-render-html (6.3.4):
     - React-Core
   - react-native-restart (0.0.27):
@@ -1254,6 +1266,8 @@ PODS:
     - FirebaseCoreExtension
     - React-Core
     - RNFBApp
+  - RNFileViewer (2.1.5):
+    - React-Core
   - RNGestureHandler (2.17.1):
     - glog
     - RCT-Folly (= 2022.05.16.00)
@@ -1273,6 +1287,8 @@ PODS:
   - RNShare (10.2.1):
     - React-Core
   - RNSnackbar (2.6.2):
+    - React-Core
+  - RNSoundPlayer (0.14.5):
     - React-Core
   - RNSVG (14.1.0):
     - React-Core
@@ -1302,6 +1318,7 @@ DEPENDENCIES:
   - GoogleUtilities
   - hermes-engine (from `../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`)
   - libevent (~> 2.1.12)
+  - lottie-react-native (from `../node_modules/lottie-react-native`)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCT-Folly/Fabric (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
@@ -1326,6 +1343,7 @@ DEPENDENCIES:
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - React-Mapbuffer (from `../node_modules/react-native/ReactCommon`)
   - react-native-date-picker (from `../node_modules/react-native-date-picker`)
+  - react-native-document-picker (from `../node_modules/react-native-document-picker`)
   - "react-native-geolocation (from `../node_modules/@react-native-community/geolocation`)"
   - react-native-geolocation-service (from `../node_modules/react-native-geolocation-service`)
   - react-native-image-picker (from `../node_modules/react-native-image-picker`)
@@ -1333,6 +1351,7 @@ DEPENDENCIES:
   - "react-native-netinfo (from `../node_modules/@react-native-community/netinfo`)"
   - react-native-onesignal (from `../node_modules/react-native-onesignal`)
   - react-native-pager-view (from `../node_modules/react-native-pager-view`)
+  - react-native-razorpay (from `../node_modules/react-native-razorpay`)
   - react-native-render-html (from `../node_modules/react-native-render-html`)
   - react-native-restart (from `../node_modules/react-native-restart`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
@@ -1365,12 +1384,14 @@ DEPENDENCIES:
   - RNFastImage (from `../node_modules/react-native-fast-image`)
   - "RNFBApp (from `../node_modules/@react-native-firebase/app`)"
   - "RNFBMessaging (from `../node_modules/@react-native-firebase/messaging`)"
+  - RNFileViewer (from `../node_modules/react-native-file-viewer`)
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNPermissions (from `../node_modules/react-native-permissions`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNShare (from `../node_modules/react-native-share`)
   - RNSnackbar (from `../node_modules/react-native-snackbar`)
+  - RNSoundPlayer (from `../node_modules/react-native-sound-player`)
   - RNSVG (from `../node_modules/react-native-svg`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
@@ -1390,9 +1411,11 @@ SPEC REPOS:
     - GoogleUtilities
     - libevent
     - libwebp
+    - lottie-ios
     - nanopb
     - OneSignalXCFramework
     - PromisesObjC
+    - razorpay-pod
     - SDWebImage
     - SDWebImageWebPCoder
     - SocketRocket
@@ -1413,6 +1436,8 @@ EXTERNAL SOURCES:
   hermes-engine:
     :podspec: "../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec"
     :tag: hermes-2024-04-29-RNv0.73.8-644c8be78af1eae7c138fa4093fb87f0f4f8db85
+  lottie-react-native:
+    :path: "../node_modules/lottie-react-native"
   RCT-Folly:
     :podspec: "../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec"
   RCTRequired:
@@ -1457,6 +1482,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   react-native-date-picker:
     :path: "../node_modules/react-native-date-picker"
+  react-native-document-picker:
+    :path: "../node_modules/react-native-document-picker"
   react-native-geolocation:
     :path: "../node_modules/@react-native-community/geolocation"
   react-native-geolocation-service:
@@ -1471,6 +1498,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-onesignal"
   react-native-pager-view:
     :path: "../node_modules/react-native-pager-view"
+  react-native-razorpay:
+    :path: "../node_modules/react-native-razorpay"
   react-native-render-html:
     :path: "../node_modules/react-native-render-html"
   react-native-restart:
@@ -1535,6 +1564,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-firebase/app"
   RNFBMessaging:
     :path: "../node_modules/@react-native-firebase/messaging"
+  RNFileViewer:
+    :path: "../node_modules/react-native-file-viewer"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
   RNPermissions:
@@ -1547,6 +1578,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-share"
   RNSnackbar:
     :path: "../node_modules/react-native-snackbar"
+  RNSoundPlayer:
+    :path: "../node_modules/react-native-sound-player"
   RNSVG:
     :path: "../node_modules/react-native-svg"
   RNVectorIcons:
@@ -1575,9 +1608,12 @@ SPEC CHECKSUMS:
   hermes-engine: b12d9bb1b7cee546f5e48212e7ea7e3c1665a367
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   libwebp: 1786c9f4ff8a279e4dac1e8f385004d5fc253009
+  lottie-ios: 8f97d3271e155c2d688875c29cd3c74908aef5f8
+  lottie-react-native: 8f9d4be452e23f6e5ca0fdc11669dc99ab52be81
   nanopb: 438bc412db1928dac798aa6fd75726007be04262
   OneSignalXCFramework: 3c3ef25ecca5eae1bf80a3272c49fd1dbab96b35
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
+  razorpay-pod: af9d52abe715ed5cc3eed9fdf6fd74340443d0b9
   RCT-Folly: 7169b2b1c44399c76a47b5deaaba715eeeb476c0
   RCTRequired: 0c7f03a41ee32dec802c74c341e317a4165973d5
   RCTTypeSafety: 57698bb7fcde424922e201dab377f496a08a63e3
@@ -1600,6 +1636,7 @@ SPEC CHECKSUMS:
   React-logger: 60afd40b183e8e6642bfd0108f1a1ad360cc665e
   React-Mapbuffer: 672a9342eb75a4d0663306e94d4dfc88aee73b93
   react-native-date-picker: 90687f1dbd374ff0265dca99d949998364c22fa9
+  react-native-document-picker: 23b6a82e09199f4f109376e73d88892a8931eeea
   react-native-geolocation: ed9e1d132f576b9a4a503af46f9704413ea0dec1
   react-native-geolocation-service: 608e1da71a1ac31b4de64d9ef2815f697978c55b
   react-native-image-picker: d3db110a3ded6e48c93aef7e8e51afdde8b16ed0
@@ -1607,6 +1644,7 @@ SPEC CHECKSUMS:
   react-native-netinfo: bdb108d340cdb41875c9ced535977cac6d2ff321
   react-native-onesignal: 55ecc835638c7ee860583e080762cd9b7512671c
   react-native-pager-view: f1e72cb827406f1b49f007ab07400197d421b6e7
+  react-native-razorpay: 0272dd684bc9148828c54a72e05059e3e2e8b813
   react-native-render-html: 984dfe2294163d04bf5fe25d7c9f122e60e05ebe
   react-native-restart: 7595693413fe3ca15893702f2c8306c62a708162
   react-native-safe-area-context: dcab599c527c2d7de2d76507a523d20a0b83823d
@@ -1639,12 +1677,14 @@ SPEC CHECKSUMS:
   RNFastImage: 5c9c9fed9c076e521b3f509fe79e790418a544e8
   RNFBApp: 614f1621b49db54ebd258df8c45427370d8d84a2
   RNFBMessaging: 74754ed198239360950f54f3e3de365fe85db451
+  RNFileViewer: ce7ca3ac370e18554d35d6355cffd7c30437c592
   RNGestureHandler: 67d3f1f69d4d0c98d6e83f4229e3bbf997d1dc72
   RNPermissions: 294531ede5a64d1528463e88fffef05675842042
   RNReanimated: 5307ba390921b76ddf9c0aa69876916ad427a61f
   RNScreens: 134a7511b12b8eb440b87aac21e36a71295d6024
   RNShare: 0fad69ae2d71de9d1f7b9a43acf876886a6cb99c
   RNSnackbar: 3727b42bf6c4314a53c18185b5203e915a4ab020
+  RNSoundPlayer: 95b72e12a6990e4fabfd71b1c7fac579f9e60e75
   RNSVG: ba3e7232f45e34b7b47e74472386cf4e1a676d0a
   RNVectorIcons: 04d49881dab53fb3397b1129085271d9d21885c1
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
@@ -1652,6 +1692,6 @@ SPEC CHECKSUMS:
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: e5b887426cee15d2a326bdd34afc0282fc0486ad
 
-PODFILE CHECKSUM: b6c2996414719cecfcb9c55557f5a662b3f3b90d
+PODFILE CHECKSUM: 92e4c770c7f15b62b01aad4951f163a09df53ac0
 
 COCOAPODS: 1.16.2

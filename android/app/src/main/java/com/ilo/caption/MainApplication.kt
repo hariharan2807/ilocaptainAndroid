@@ -1,4 +1,4 @@
-package com.frutta.client
+package com.ilo.caption
 
 import android.app.Application
 import com.facebook.react.PackageList

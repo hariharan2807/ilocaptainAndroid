@@ -1,0 +1,43 @@
+// {
+//   "plugins": [
+//     [
+//       "module-resolver",
+//       {
+//         "root": ["../"],
+//         "alias": {
+//           "@tailwind": "./tailwind",
+//           "@assets": "./constants/assets_manifest",
+//           "@sharedComponents": "./sharedComponents",
+//           "@constants": "./constants",
+//           "@workers": "./workers",
+//           "@remote": "./remote",
+//           "@actions": "./store/actions"
+//         }
+//       }
+//     ]
+//   ]
+// }
+
+{
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@tailwind": "./tailwind",
+          "@assets": "./constants/assets_manifest",
+          "@sharedComponents": "./sharedComponents",
+          "@Component": "./Component",
+          "@constants": "./constants",
+          "@workers": "./workers",
+          "@remote": "./remote",
+          "@remote/userRemote": "./remote/userRemote",
+          "@actions": "./store/actions",
+          "@screens": "./Screen",
+          "@constants/API_constants": "./constants/API_constants"
+        }
+      }
+    ]
+  ]
+}

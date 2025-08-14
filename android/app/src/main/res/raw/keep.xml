@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /*************************************************************************
+  ~ * KnockKnock Delivery
+  ~ *
+  ~ * Created by Team Android, GTechSolutions on 28/02/23, 12:01 PM
+  ~ * mailto:info@gtechwebsolutions.com
+  ~ * Last modified 28/02/23, 11:03 AM
+  ~ * Copyright (c) 2023.
+  ~ * All rights reserved.
+  ~ ***************************************************************************/
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@raw/notification" />

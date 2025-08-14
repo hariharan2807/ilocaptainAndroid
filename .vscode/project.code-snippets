@@ -1,0 +1,42 @@
+{
+	"tailwindStyleBlock": {
+		"scope": "typescriptreact",
+		"prefix": "makestyle",
+		"body": [
+			" style={[tailwind('$1')$2]}"
+		],
+		"description": "tailwind Style Basic Block"
+	},
+
+	"BasicStyleView": {
+		"scope": "typescriptreact",
+		"prefix": "stView",
+		"body": [
+			"<View style={[tailwind('$1')$2]}>",
+			"   ",
+			"</View>"
+		],
+		"description": "Basic Local View"
+	},
+	"BasicStyleImage": {
+		"scope": "typescriptreact",
+		"prefix": "stImage",
+		"body": [
+			"<Image",
+			"resizeMode='contain'",
+			"style={[tailwind(''), {height: 300, width: 200}]}",
+			"source={assets_manifest.splash}",
+			"/>",
+				],
+		"description": "Basic Local Image"
+	},
+	"BasicStyleText": {
+		"scope": "typescriptreact",
+		"prefix": "stText",
+		"body": [
+			"<Text style={[tailwind('font-regular font-15')]}>${1}</Text>",
+		],
+		"description": "Basic Text"
+	},
+}
+

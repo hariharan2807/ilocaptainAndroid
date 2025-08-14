@@ -1,0 +1,37 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Milliard-Bold.otf",
+      "sha1": "cad1e016262c5ddfd2677c4b899e08e7158604c4"
+    },
+    {
+      "path": "assets/fonts/Milliard-Light.otf",
+      "sha1": "68cb10a5f4cbc4340f69d4061c2ddc052f6b7c18"
+    },
+    {
+      "path": "assets/fonts/Milliard-Medium.otf",
+      "sha1": "80b35e03febf257919dc801eb07f808122055f8e"
+    },
+    {
+      "path": "assets/fonts/Milliard-SemiBold.otf",
+      "sha1": "158d2cb3c0b7a00efaf45df6adfe8a444fd783d9"
+    },
+    {
+      "path": "assets/fonts/Nunito-Bold.ttf",
+      "sha1": "d8091536d0fab37a3239067f708a0221070835da"
+    },
+    {
+      "path": "assets/fonts/Nunito-Light.ttf",
+      "sha1": "c570f483013f57db1a325ae1ddc2e11c115bb441"
+    },
+    {
+      "path": "assets/fonts/Nunito-Medium.ttf",
+      "sha1": "941255b6a8c1e2d286ed9613bd6b354e2423dad9"
+    },
+    {
+      "path": "assets/fonts/Nunito-SemiBold.ttf",
+      "sha1": "047ca2a59c253520cc46b3506744fad6ef8192c6"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 // export const BASE_URL = "https://arbitration.appsarasan.com/"
-export const BASE_URL = 'https://booking.iloconnect.in/';
+export const BASE_URL = 'https://booking.ilodelivery.com/';
 
 export const METHODS = {
   GET: 'GET',

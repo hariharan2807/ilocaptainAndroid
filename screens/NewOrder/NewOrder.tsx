@@ -217,7 +217,7 @@ export default function NewOrder() {
       ) : (
         <View style={[tailwind('h-full'), {}]}>
           <Text
-            style={[tailwind(' font-bold text-lg font-22 text-center mt-5')]}>
+            style={[tailwind(' font-bold text-lg font-22 text-center mt-5 text-black')]}>
             Hi New Booking Arrived
           </Text>
           <FlatList
@@ -273,7 +273,7 @@ export default function NewOrder() {
                     ]}>
                     <Text style={[tailwind(`text-sm text-gray-700`)]}>
                       Fare:{' '}
-                      <Text style={[tailwind(`font-semibold`)]}>
+                      <Text style={[tailwind(`font-semibold text-black`)]}>
                         ₹{item.estimate_fare}
                       </Text>
                     </Text>
@@ -303,7 +303,7 @@ export default function NewOrder() {
                     ) : (
                       <Text
                         style={[
-                          tailwind(`text-black font-semibold text-center`),
+                          tailwind(`text-black font-semibold text-center `),
                         ]}>
                         Accept Trip
                       </Text>

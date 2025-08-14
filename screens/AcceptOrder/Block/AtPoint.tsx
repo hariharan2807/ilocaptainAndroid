@@ -180,7 +180,7 @@ export const AtPoint = (props: prototype) => {
                 {width: '100%', borderBottomWidth: 1},
               ]}>
               <View style={[tailwind(''), {width: '90%'}]}>
-                <Text style={[tailwind('mt-1'), {}]}>
+                <Text style={[tailwind('mt-1 text-black'), {}]}>
                   {props?.status == 'booked'
                     ? props?.pickup_address
                     : props?.dropAddress}
@@ -255,26 +255,26 @@ export const AtPoint = (props: prototype) => {
                 {justifyContent: 'space-between'},
               ]}>
               <View style={[tailwind('items-center'), {}]}>
-                <Text>Distance</Text>
+                <Text style={[tailwind('text-black font-semibold')]}>Distance</Text>
                 <View style={[tailwind('flex-row mt-2 items-center'), {}]}>
                   <Entypo name="map" color="black" size={20} />
-                  <Text style={[tailwind('ml-1'), {}]}>
+                  <Text style={[tailwind('ml-1 text-gray-700'), {}]}>
                     {Number(props?.distance).toFixed(2)}
                   </Text>
                 </View>
               </View>
               <View style={[tailwind('items-center'), {}]}>
-                <Text>Trip Type</Text>
+                <Text  style={[tailwind('text-black font-semibold')]}>Trip Type</Text>
                 <View style={[tailwind('flex-row mt-2 items-center'), {}]}>
                   <Ionicons name="car-sport" color="black" size={20} />
-                  <Text style={[tailwind('ml-1'), {}]}>{props?.trip_type}</Text>
+                  <Text style={[tailwind('ml-1 text-gray-700'), {}]}>{props?.trip_type}</Text>
                 </View>
               </View>
               <View style={[tailwind('items-center'), {}]}>
-                <Text>Estimated Fare</Text>
+                <Text style={[tailwind('text-black font-semibold')]}>Estimated Fare</Text>
                 <View style={[tailwind('flex-row mt-2 items-center'), {}]}>
-                  <FontAwesome name="rupee" color="black" size={20} />
-                  <Text style={[tailwind('ml-1'), {}]}>
+                  <FontAwesome name="rupee" color="gray" size={20} />
+                  <Text style={[tailwind('ml-1 text-gray-700'), {}]}>
                     {Math.round(props?.total)}
                   </Text>
                 </View>
@@ -283,7 +283,7 @@ export const AtPoint = (props: prototype) => {
           ) : null}
           {props?.status == 'pickup_location_reached' ? (
             <View>
-              <Text style={[tailwind('font-16 font-bold mb-5 '), {}]}>
+              <Text style={[tailwind('font-16 font-bold mb-5 text-black'), {}]}>
                 OTP Confirmation Code{' '}
               </Text>
               <View style={[tailwind('items-center'), {}]}>
@@ -447,13 +447,13 @@ export const AtPoint = (props: prototype) => {
         <View style={[tailwind('mx-3 mt-5'), {}]}>
           <View
             style={[tailwind('flex-row items-center mb-5'), {width: '100%'}]}>
-            <Text style={[tailwind('font-15  font-bold'), {width: '45%'}]}>
+            <Text style={[tailwind('font-15  font-bold text-black'), {width: '45%'}]}>
               Total Estimate Fare
             </Text>
             {props?.payment_mode_name !== 'Cash On Delivery' && (
               <Text
                 style={[
-                  tailwind(''),
+                  tailwind('text-black'),
                   {fontWeight: 'bold', marginLeft: 'auto'},
                 ]}>
                 ₹{Math.round(props?.total)}
@@ -465,12 +465,12 @@ export const AtPoint = (props: prototype) => {
             <View>
               {props?.payment_mode_name && (
                 <View style={[tailwind('flex-row items-center py-2'), {}]}>
-                  <Text style={[tailwind('font-15'), {fontWeight: 'bold'}]}>
+                  <Text style={[tailwind('font-15 text-black'), {fontWeight: 'bold'}]}>
                     Payment Mode
                   </Text>
                   <Text
                     style={[
-                      tailwind('font-15'),
+                      tailwind('font-15 text-black'),
                       {fontWeight: 'bold', marginLeft: 'auto'},
                     ]}>
                     {props?.payment_mode_name}
@@ -479,10 +479,10 @@ export const AtPoint = (props: prototype) => {
               )}
               {props?.fare != '0' && (
                 <View style={[tailwind('flex-row items-center py-2'), {}]}>
-                  <Text>Trip Amount</Text>
+                  <Text  style={[tailwind('text-black')]}>Trip Amount</Text>
                   <Text
                     style={[
-                      tailwind(''),
+                      tailwind('text-black'),
                       {fontWeight: 'bold', marginLeft: 'auto'},
                     ]}>
                     ₹{Math.round(Number(props?.fare))}
@@ -491,10 +491,10 @@ export const AtPoint = (props: prototype) => {
               )}
               {props?.tax != '0.00' && (
                 <View style={[tailwind('flex-row items-center py-2'), {}]}>
-                  <Text>Tax</Text>
+                  <Text style={[tailwind('text-black')]}>Tax</Text>
                   <Text
                     style={[
-                      tailwind(''),
+                      tailwind('text-black'),
                       {fontWeight: 'bold', marginLeft: 'auto'},
                     ]}>
                     ₹{Math.round(props?.tax)}
@@ -523,8 +523,8 @@ export const AtPoint = (props: prototype) => {
               />
               {props?.total && (
                 <View style={[tailwind('flex-row items-center py-2'), {}]}>
-                  <Text style={[tailwind('font-18 font-bold'), {}]}>Total</Text>
-                  <Text style={[tailwind('font-bold'), {marginLeft: 'auto'}]}>
+                  <Text style={[tailwind('font-18 font-bold text-black'), {}]}>Total</Text>
+                  <Text style={[tailwind('font-bold text-black'), {marginLeft: 'auto'}]}>
                     ₹ {Math.round(props?.total)}
                   </Text>
                 </View>

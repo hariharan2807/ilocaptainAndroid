@@ -29,10 +29,12 @@ import Bag from './SvgIcons/Bag';
 import BagColor from './SvgIcons/BagColor';
 import ChecboxoutLine from './SvgIcons/ChecboxoutLine';
 import CheckBox from './SvgIcons/CheckBox';
+import Logout from './SvgIcons/Logout';
 
 export {
   AddressIcon,
   AccoundIcon,
+  Logout,
   Bag,
   BagColor,ChecboxoutLine,CheckBox,
   AppIcon,

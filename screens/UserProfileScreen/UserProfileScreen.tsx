@@ -38,6 +38,7 @@ import RNRestart from 'react-native-restart';
 import {Redlog} from '../../constants/API_constants';
 import {
   geRazorPayremote,
+  getDeactivateRemote,
   getMyprofileremote,
   getNewOrder,
   getUpdate_online_sts,
@@ -50,6 +51,7 @@ import DeviceInfo from 'react-native-device-info';
 import Geolocation from 'react-native-get-location';
 import {ModalComp} from '@sharedComponents';
 import {appControl, saveuserInfo} from '../../store/actions/userActions';
+import {Logout} from '../../assets/icons';
 
 const log = console.log;
 
@@ -57,6 +59,7 @@ export default function UserProfileScreen() {
   const dispatch = useDispatch();
   const CartState = useSelector(state => state.user.user);
   const [LogModal, setLogModal] = useState(false);
+  const [deactivateModal, setDeactivateModal] = useState(false);
   const {height, width} = useWindowDimensions();
   const navigation = useNavigation();
   const [polling, setPolling] = useState(true);
@@ -168,6 +171,35 @@ export default function UserProfileScreen() {
       Redlog('LogoutHandler ', err);
     }
   };
+  const deactivateAction = async () => {
+    setDeactivateModal(false);
+    const deactivateRemote = await getDeactivateRemote();
+    if (deactivateRemote) {
+      await removeTokenUser();
+
+      // await removeToken();
+      // await removeNotification();
+      // dispatch(saveJWTTokenAction(null));
+      // dispatch(saveUser(null));
+      // dispatch(updateSelectedAddressAction(null));
+      // dispatch(SaveWalletAction(null));
+      // dispatch(updateCart([]));
+      // dispatch(saveAddresses([]));
+      navigation.dispatch(
+        CommonActions.reset({
+          index: 0,
+          routes: [
+            {
+              name: 'InitialScreen',
+            },
+          ],
+        }),
+      );
+    } else {
+      setDeactivateModal(false);
+      errorBox('Please Try Again Later');
+    }
+  };
   const requestLocationPermission = async () => {
     const getProfile = await getMyprofileremote();
     const Response11 = await initiateAppControllRemote();
@@ -242,12 +274,10 @@ export default function UserProfileScreen() {
       current_longitude: location?.longitude,
     });
     if (Response?.status) {
-      if(status=="1"){
-        infoBox('You are On Duty')
-      }
-      else{
-        infoBox('You are Off Duty')
-
+      if (status == '1') {
+        infoBox('You are On Duty');
+      } else {
+        infoBox('You are Off Duty');
       }
       // infoBox('Status Updated');
     } else {
@@ -271,7 +301,6 @@ export default function UserProfileScreen() {
     );
     RazorpayCheckout.open(rzOrder)
       .then(async (success: any) => {
-
         DriverStatus('1');
         // setSelected('1');
         /*
@@ -312,7 +341,9 @@ export default function UserProfileScreen() {
           <Text style={[tailwind('mt-2 text-black font-16 font-bold'), {}]}>
             {CartState?.driver_name}{' '}
           </Text>
-          <Text style={[tailwind('mt-1 text-black'), {}]}>{CartState?.driver_email} </Text>
+          <Text style={[tailwind('mt-1 text-black'), {}]}>
+            {CartState?.driver_email}{' '}
+          </Text>
           <TouchableOpacity
             onPress={() => {
               navigation?.navigate('EditProfileScreen');
@@ -324,7 +355,9 @@ export default function UserProfileScreen() {
           </TouchableOpacity>
         </View>
         <View>
-          <Text style={[tailwind('py-3 px-3 bg-gray mt-5 text-black'), {}]}>More</Text>
+          <Text style={[tailwind('py-3 px-3 bg-gray mt-5 text-black'), {}]}>
+            More
+          </Text>
           <View style={[tailwind('mt-3 '), {}]}>
             {List?.map((i: any, index: any) => {
               return (
@@ -341,7 +374,9 @@ export default function UserProfileScreen() {
                       {height: 20, width: 20, tintColor: 'black'},
                     ]}
                   />
-                  <Text style={[tailwind('ml-3 text-black'), {}]}>{i?.name}</Text>
+                  <Text style={[tailwind('ml-3 text-black'), {}]}>
+                    {i?.name}
+                  </Text>
                   <View style={[tailwind(''), {marginLeft: 'auto'}]}>
                     <Entypo name="chevron-right" size={20} color={'black'} />
                   </View>
@@ -366,6 +401,14 @@ export default function UserProfileScreen() {
               {/* <View style={[tailwind(''), {marginLeft: 'auto'}]}>
                     <Entypo name="chevron-right" size={20} color={'black'} />
                   </View> */}
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => setDeactivateModal(true)}>
+              <View style={[tailwind('flex-row items-center mx-2 my-3 ')]}>
+                <Logout />
+                <Text style={[tailwind('font-bold text-red-500 font-16 pl-2')]}>
+                  Deactivate Account
+                </Text>
+              </View>
             </TouchableOpacity>
           </View>
         </View>
@@ -448,13 +491,91 @@ export default function UserProfileScreen() {
           </View>
         </View>
       </Modal>
+
+      <Modal
+        backdropOpacity={0.15}
+        style={[
+          tailwind(' h-full items-center justify-center '),
+          {backgroundColor: 'transparent'},
+        ]}
+        isVisible={deactivateModal}
+        onBackButtonPress={() => {
+          setDeactivateModal(false);
+        }}>
+        <View
+          style={[
+            tailwind('rounded-tl-xl rounded-br-xl mx-3 items-center '),
+            {backgroundColor: '#ffffff'},
+          ]}>
+          <Image
+            resizeMode="contain"
+            source={assets_manifest.react_logo}
+            style={[
+              tailwind('rounded-full bg-white font-bold mt-5 font-19'),
+              {height: 150, width: 150, resizeMode: 'cover'},
+            ]}
+          />
+          {/* <Text
+            numberOfLines={1}
+            style={[
+              tailwind(' text-black font-bold py-2  font-19'),
+              {width: width / 1.2},
+            ]}>
+            Delete
+          </Text> */}
+
+          <Text
+            numberOfLines={2}
+            style={[
+              tailwind('font-bold text-gray  text-center py-3 mb-4 font-16'),
+              {width: width / 1.2},
+            ]}>
+            Do you want to Deactivate the iLo Captain Account ?
+          </Text>
+
+          <View
+            style={[
+              tailwind('  items-center justify-between rounded-xl px-3 py-3'),
+              {},
+            ]}>
+            <TouchableOpacity
+              onPress={deactivateAction}
+              style={[
+                tailwind('rounded-xl my-2 bg-primary'),
+                {backgroundColor: '#EB5757'},
+                {width: width / 1.2},
+              ]}>
+              <Text
+                style={[
+                  tailwind('font-bold text-center py-3  text-white font-16'),
+                ]}>
+                Deactivate
+              </Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => setDeactivateModal(false)}
+              style={[
+                tailwind('rounded-xl my-2 bg-secondary'),
+                // {backgroundColor: '#EB5757'},
+                {width: width / 1.2},
+              ]}>
+              <Text
+                style={[
+                  tailwind('font-bold text-center text-black py-3 font-16 '),
+                ]}>
+                Cancel
+              </Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </Modal>
+
       <ModalComp
         popup={popup}
         setpopup={setpopup}
         CancelStatus={CancelStatus}
         PayNow={PayNow}
         admin_commision={navigated?.admin_commision}
-
       />
     </View>
   );

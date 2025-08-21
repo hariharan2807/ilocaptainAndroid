@@ -44,12 +44,15 @@ import store from '../../store';
 import Modal from 'react-native-modal';
 import assets_manifest from '@assets';
 import OneSignal from 'react-native-onesignal';
+import {PERMISSIONS, request} from 'react-native-permissions';
 
 export default function DashboardScreen() {
   const navigation = useNavigation();
   const {height} = useWindowDimensions();
   const dispatch = useDispatch();
   const [TurnOnLoad, setTurnOnLoad] = useState(false);
+  const [locationOn, setLocationOn] = useState(false);
+
   const CartState = useSelector(state => state.user.user);
   const UserInfo = store.getState().user.userInfo;
   const AppControll = store.getState().user.appcontrol;
@@ -75,8 +78,8 @@ export default function DashboardScreen() {
     {refetchInterval: 2000},
   );
   const SchedlewOrder = useQuery(['geSchedlueremote'], geSchedlueremote);
-  console.log("CartState",CartState)
- 
+  // console.log('CartState', CartState);
+
   useFocusEffect(
     useCallback(() => {
       let interval = null;
@@ -95,9 +98,11 @@ export default function DashboardScreen() {
   useFocusEffect(
     useCallback(() => {
       requestLocationPermission();
-    }, [TurnOnLoad]),
+    }, [TurnOnLoad, locationOn]),
   );
-
+  useEffect(() => {
+    requestLocationPermission();
+  }, [locationOn]);
   const requestLocationPermission = async () => {
     const getProfile = await getMyprofileremote();
     const Response11 = await initiateAppControllRemote();
@@ -122,13 +127,51 @@ export default function DashboardScreen() {
       dispatch(saveuserInfo(getProfile?.data));
     }
     let permission = await acquireGPSPermission();
+
     if (permission.status) {
+      setLocationOn(false);
       getLocation();
     } else {
-      errorBox('Kindly Give Permission To Access Location');
+      setLocationOn(true);
+      // getLocation();
+      // errorBox('Kindly Give Permission To Access Location');
     }
     return null;
   };
+  const acquireGPSPermissionData = async () => {
+    let result;
+    if (Platform.OS === 'ios') {
+      result = await request(PERMISSIONS.IOS.LOCATION_WHEN_IN_USE);
+    } else {
+      result = await request(PERMISSIONS.ANDROID.ACCESS_FINE_LOCATION);
+    }
+    return result;
+  };
+  const openIOSLocationSettings = () => {
+    if (Platform.OS === 'ios') {
+      Linking.openURL('App-Prefs:root=Privacy&path=LOCATION');
+    } else {
+      // Android
+      Linking.sendIntent('android.settings.LOCATION_SOURCE_SETTINGS');
+    }
+  };
+  // const Loc = async () => {
+  //   if (Platform.OS === 'ios') {
+  //     Linking.openURL('app-settings:'); // opens app's settings, includes Notifications
+  //   } else {
+  //     Linking.openSettings();
+  //   }
+  //   //     let permission = await acquireGPSPermission();
+  //   // console.log("permissionpermissionpermissionpermission",permission)
+  //   //     if (permission.status) {
+  //   //       setLocationOn(false);
+  //   //       getLocation();
+  //   //     } else {
+  //   //       setLocationOn(true);
+  //   //       // getLocation();
+  //   //       // errorBox('Kindly Give Permission To Access Location');
+  //   //     }
+  // };
   const getLocation = async () => {
     try {
       const locationEnabled = await DeviceInfo.isLocationEnabled();
@@ -315,9 +358,9 @@ export default function DashboardScreen() {
         OneSignal.setEmail('email', email);
         OneSignal.setExternalUserId(`${driverId}`);
         // if (driverId) {
-        //   OneSignal.login(driverId); 
+        //   OneSignal.login(driverId);
         // }
-  
+
         // if (email) {
         //   OneSignal.User.addEmail(email);
         // }
@@ -335,7 +378,32 @@ export default function DashboardScreen() {
       }
     }
   }, [CartState?.driver_id]);
-  
+  if (locationOn) {
+    return (
+      <View
+        style={{
+          flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: 'white',
+        }}>
+        <Text
+          style={[
+            tailwind('font-17 text-center'),
+            {marginBottom: 20, width: '70%'},
+          ]}>
+          ⚠️ Location Permission Required New orders cannot be received if
+          Location is turned off. Please enable Location Services to continue
+          using the app.
+        </Text>
+        <TouchableOpacity
+          onPress={openIOSLocationSettings}
+          style={[tailwind('bg-secondary'), {padding: 12, borderRadius: 8}]}>
+          <Text style={{color: 'black'}}>Continue</Text>
+        </TouchableOpacity>
+      </View>
+    );
+  }
   return (
     <View style={tailwind(' h-full')}>
       {location?.latitude && location?.longitude ? (

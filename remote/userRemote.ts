@@ -30,6 +30,7 @@ const req_withdraw_history='api/rider/withdraw_history'
 const req_get_schedule_trips='api/rider/get_schedule_trips'
 const req_get_city='api/rider/city'
 const req_get_zone='api/rider/zone'
+const req_deactivate = 'api/rider/deactivate';
 
 //OnlY POSTzone
 //Get query key
@@ -71,6 +72,24 @@ export const geQrremote = async (payload: any) => {
     };
   }
 };
+export const getDeactivateRemote=async()=>{
+  try {
+    const response = await requestServer(
+      METHODS.POST,
+      BASE_URL + req_deactivate,
+      // payload,
+    );
+    return response.status === 200
+      ? response
+      : failedLog('geQrremote()', response);
+  } catch (err) {
+    return {
+      status: false,
+      statusCode: err?.statusCode,
+      res: err?.data,
+    };
+  }
+}
 export const geRazorPayremote = async (payload: any) => {
   try {
     const response = await requestServer(

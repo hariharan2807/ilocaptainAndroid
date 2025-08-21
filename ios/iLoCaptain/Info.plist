@@ -62,15 +62,15 @@
 		<string>Nunito-SemiBold.ttf</string>
 	</array>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Frutta Client app require the location permission to access the user nearby and fetching the shop details</string>
+	<string>iLo Captain app require the location permission to access the user nearby and fetching the shop details</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Frutta Client app require the location permission to access the user nearby and fetching the shop details</string>
+	<string>iLo Captain app require the location permission to access the user nearby and fetching the shop details</string>
 	<key>NSLocationUsageDescription</key>
-	<string>Frutta Client app require the location permission to access the user nearby and fetching the shop details</string>
+	<string>iLo Captain app require the location permission to access the user nearby and fetching the shop details</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Frutta Client app require the location permission to access the user nearby and fetching the shop details</string>
+	<string>iLo Captain app require the location permission to access the user nearby and fetching the shop details</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Frutta Client app require the library permission to access image to upload</string>
+	<string>iLo Captain app require the library permission to access image to upload</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>

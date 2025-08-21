@@ -100,17 +100,16 @@ android {
             def storeFilePath
 
             if (osName.contains('win')) {
-                storeFilePath = "${projectDir}\\app\\FruttaCustomer.jks"
+                storeFilePath = "${projectDir}\\app\\iLoCaptain.jks"
             } else {
-                storeFilePath = "${projectDir}/app/FruttaCustomer.jks"
+                storeFilePath = "${projectDir}/app/iLoCaptain.jks"
             }
             storeFile file(storeFilePath)
-            // storeFile file('E:\\Reactnative\\project\\FruttaAppCustomer-RN\\android\\app\\FruttaCustomer.jks')
-                        // storeFile file('D:\\development\\Application\\FruttaAppCustomer-RN\\android\\app\\FruttaCustomer.jks')
+            
 
-            storePassword 'FruttaCustomer'
-            keyAlias 'FruttaCustomer'
-            keyPassword 'FruttaCustomer'
+            storePassword 'iLoCaptain'
+            keyAlias 'iLoCaptain'
+            keyPassword 'iLoCaptain'
         }
     }
     buildTypes {

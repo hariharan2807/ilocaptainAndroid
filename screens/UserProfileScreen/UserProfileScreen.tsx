@@ -406,7 +406,7 @@ export default function UserProfileScreen() {
               <View style={[tailwind('flex-row items-center mx-2 my-3 ')]}>
                 <Logout />
                 <Text style={[tailwind('font-bold text-red-500 font-16 pl-2')]}>
-                  Deactivate Account
+                  Delete Account
                 </Text>
               </View>
             </TouchableOpacity>
@@ -504,17 +504,24 @@ export default function UserProfileScreen() {
         }}>
         <View
           style={[
-            tailwind('rounded-tl-xl rounded-br-xl mx-3 items-center '),
+            tailwind('rounded-tl-xl rounded-br-xl mx-3 '),
             {backgroundColor: '#ffffff'},
           ]}>
-          <Image
-            resizeMode="contain"
-            source={assets_manifest.react_logo}
+          <View
             style={[
-              tailwind('rounded-full bg-white font-bold mt-5 font-19'),
-              {height: 150, width: 150, resizeMode: 'cover'},
-            ]}
-          />
+              tailwind('rounded-tl-xl rounded-br-xl mx-3 items-center'),
+              {backgroundColor: '#ffffff'},
+            ]}>
+            <Image
+              resizeMode="contain"
+              source={assets_manifest.react_logo}
+              style={[
+                tailwind('rounded-full bg-white font-bold mt-5 font-19 '),
+                {height: 150, width: 150, resizeMode: 'cover'},
+              ]}
+            />
+          </View>
+
           {/* <Text
             numberOfLines={1}
             style={[
@@ -523,16 +530,26 @@ export default function UserProfileScreen() {
             ]}>
             Delete
           </Text> */}
-
           <Text
             numberOfLines={2}
             style={[
-              tailwind('font-bold text-gray  text-center py-3 mb-4 font-16'),
+              tailwind('font-bold text-gray text-center py-3 mb-4 font-16'),
               {width: width / 1.2},
             ]}>
-            Do you want to Deactivate the iLo Captain Account ?
+            Are you sure you want to delete your account?
           </Text>
-
+          <Text style={[tailwind('mx-5 font-16 font-bold')]}>Notes :</Text>
+          <View style={tailwind('mx-5 mt-1')}>
+            <Text style={tailwind('text-gray-600 font-15')}>
+              • Deletion will take up to 48 hours
+            </Text>
+            <Text style={tailwind('text-gray-600 font-15')}>
+              • You won’t be able to log back in
+            </Text>
+            <Text style={tailwind('text-gray-600 font-15')}>
+              • This action is permanent
+            </Text>
+          </View>
           <View
             style={[
               tailwind('  items-center justify-between rounded-xl px-3 py-3'),
@@ -549,7 +566,7 @@ export default function UserProfileScreen() {
                 style={[
                   tailwind('font-bold text-center py-3  text-white font-16'),
                 ]}>
-                Deactivate
+                Delete
               </Text>
             </TouchableOpacity>
             <TouchableOpacity

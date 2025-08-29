@@ -5,6 +5,8 @@ import {AppIcon, AppIconname, NotificationIcon} from '../../../assets/icons';
 import {useNavigation} from '@react-navigation/native';
 import assets_manifest from '@assets';
 import {errorBox} from '../../../workers/utils';
+import store from '../../../store';
+import {useSelector} from 'react-redux';
 interface Prototype {
   setSelected: any;
   selected: any;
@@ -15,13 +17,14 @@ interface Prototype {
   SchedlewOrder: any;
 }
 const TopView = (props: Prototype) => {
+  const UserInfo = useSelector(state => state.user.user);
+  console.log('props?.selected', props?.selected);
   const navigation = useNavigation();
   const Onpress = () => {
     props?.DriverStatus('0');
-    props?.setSelected('2');
+    // props?.setSelected('2');
   };
   const Onpress1 = () => {
-   
     if (Number(props?.admin_commission_limt) > props?.user_admin_commision) {
       props?.DriverStatus('1');
       props?.setSelected('1');
@@ -38,6 +41,7 @@ const TopView = (props: Prototype) => {
         ]}>
         {/* Button 1 */}
         <TouchableOpacity
+          disabled={props?.selected !== UserInfo?.driver_online_status}
           style={tailwind('py-3 items-center')}
           onPress={Onpress}>
           <Image
@@ -109,6 +113,8 @@ const TopView = (props: Prototype) => {
         {/* Button 2 */}
         <TouchableOpacity
           style={tailwind('py-3 items-center')}
+          disabled={props?.selected === UserInfo?.driver_online_status}
+
           onPress={Onpress1}>
           <Image
             source={assets_manifest?.Car}

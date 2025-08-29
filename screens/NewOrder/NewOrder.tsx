@@ -62,8 +62,8 @@ export default function NewOrder() {
   const NewOrder1 = useQuery(['getNewOrder'], getNewOrder, {
     refetchInterval: 2000,
   });
-  console.log('data=-=-=-=-=-', route?.params?.data);
-  console.log('NewOrder1=-=-=-=-=-', NewOrder1?.data?.data);
+  // console.log('data=-=-=-=-=-', route?.params?.data);
+   console.log('NewOrder1=-=-=-=-=-', NewOrder1?.data?.data);
 
   useEffect(() => {
     if (NewOrder1.data?.res?.status === false) {

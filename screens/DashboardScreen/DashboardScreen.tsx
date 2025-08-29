@@ -253,16 +253,23 @@ export default function DashboardScreen() {
   };
 
   const DriverStatus = async (status: any) => {
+    const currentLocation = await Geolocation.getCurrentPosition({
+      enableHighAccuracy: true,
+      timeout: 15000,
+    });
+    console?.log('currentLocation', currentLocation);
     const Response = await getUpdate_online_sts({
       online_status: status,
-      current_latitude: location?.latitude,
-      current_longitude: location?.longitude,
+      current_latitude: currentLocation?.latitude,
+      current_longitude: currentLocation?.longitude,
     });
     if (Response?.status) {
       if (status == '1') {
         infoBox('You are On Duty');
+        setSelected('1');
       } else {
         infoBox('You are Off Duty');
+        setSelected('2');
       }
       // infoBox('Status Updated');
     } else {
@@ -337,7 +344,6 @@ export default function DashboardScreen() {
   const CancelStatus = (status: any) => {
     setPolling(false);
     setpopup(false);
-    setSelected('2');
     DriverStatus(status);
   };
   const Confirm = async (id: any) => {

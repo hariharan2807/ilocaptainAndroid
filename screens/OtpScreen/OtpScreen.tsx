@@ -5,13 +5,16 @@ import {
   TouchableOpacity,
   useWindowDimensions,
   ActivityIndicator,
+  Alert,
+  Platform,
+  Linking,
 } from 'react-native';
 import React, {useState} from 'react';
 import {TopBar} from '@sharedComponents';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import {useNavigation, useRoute} from '@react-navigation/native';
 import OTPInput from '../../screens/AcceptOrder/Block/OTPInput';
-import {getMyprofileremote, getVerifyOtpremote} from '../../remote/userRemote';
+import {getMyprofileremote, getUpdate_online_sts, getVerifyOtpremote} from '../../remote/userRemote';
 import {errorBox} from '../../workers/utils';
 import {
   saveJWTTokenAction,
@@ -19,11 +22,15 @@ import {
 } from '../../store/actions/userActions';
 import {useDispatch} from 'react-redux';
 import {SaveToken} from '../../workers/localStorage';
+import DeviceInfo from 'react-native-device-info';
+import Geolocation from 'react-native-get-location';
+
 export default function OtpScreen() {
   const route = useRoute();
   const [otp, setOtp] = useState('');
   const dispatch = useDispatch();
   const [loading, setLoading] = useState(false);
+  const [TurnOnLoad, setTurnOnLoad] = useState(false);
 
   const navigation = useNavigation();
   const {width, height} = useWindowDimensions();
@@ -43,6 +50,30 @@ export default function OtpScreen() {
       SaveToken(route?.params?.token);
       dispatch(saveJWTTokenAction(route?.params?.token));
       const getProfile = await getMyprofileremote();
+        const locationEnabled = await DeviceInfo.isLocationEnabled();
+      if (locationEnabled) {
+        const currentLocation = await Geolocation.getCurrentPosition({
+          enableHighAccuracy: true,
+          timeout: 15000,
+        });
+        // setLocation({
+        //   latitude: currentLocation?.latitude,
+        //   longitude: currentLocation?.longitude,
+        //   latitudeDelta: 0.0065,
+        //   longitudeDelta: 0.0065,
+        // });
+
+
+
+
+         const Response = await getUpdate_online_sts({
+              online_status: "0",
+              current_latitude: currentLocation?.latitude,
+              current_longitude: currentLocation?.longitude,
+            });
+      } else {
+        promptEnableLocationServices();
+      }
       if (getProfile?.data?.driver_name) {
         dispatch(saveuserInfo(getProfile?.data));
         navigation.reset({
@@ -69,6 +100,32 @@ export default function OtpScreen() {
       errorBox(Response?.res?.message);
     }
   };
+    const promptEnableLocationServices = () => {
+      Alert.alert(
+        'Enable Location Services',
+        'Location services are disabled. Please enable them to continue.',
+        [
+          {text: 'Cancel', style: 'cancel'},
+          {
+            text: 'Enable',
+            onPress: () => {
+              if (Platform.OS === 'ios') {
+                setTimeout(() => {
+                  setTurnOnLoad(true);
+                }, 2000);
+                Linking.openURL('App-Prefs:root=Privacy&path=LOCATION');
+              } else {
+                setTimeout(() => {
+                  setTurnOnLoad(true);
+                }, 2000);
+                Linking.sendIntent('android.settings.LOCATION_SOURCE_SETTINGS');
+                // Linking.openSettings();
+              }
+            },
+          },
+        ],
+      );
+    };
   return (
     <View style={[tailwind('h-full bg-white'), {}]}>
       <TopBar titile={''} />

@@ -38,5 +38,7 @@ export default {
   folder:require('../assets/images/folder.png'),
   ringing:require('../assets/images/ringing.png'),
   calendar:require('../assets/images/calendar.png'),
-  close:require('../assets/images/close.png')
+  close:require('../assets/images/close.png'),
+    Update1:require('../assets/images/Update1.png')
+
 };

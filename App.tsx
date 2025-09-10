@@ -50,7 +50,10 @@ import RNRestart from 'react-native-restart';
 import NetInfo from '@react-native-community/netinfo';
 import DeviceInfo from 'react-native-device-info';
 import {useNavigation} from '@react-navigation/native';
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
+import {initiateAppControllRemote} from './remote/userRemote';
+import Icon from 'react-native-vector-icons/Ionicons';
+import assets_manifest from '@assets';
 
 const queryClient = new QueryClient();
 
@@ -103,10 +106,47 @@ const App: () => Node = () => {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+  let versioncode = DeviceInfo.getVersion();
+  const [updateAvailable, setUpdateAvailable] = useState(false);
+  const [dismissedUpdate, setDismissedUpdate] = useState(false); // New state for dismissing update prompt
+  const openStore = () => {
+    if (Platform.OS == 'android') {
+      Linking.openURL(
+        'https://play.google.com/store/apps/details?id=com.ilo.caption&hl=en_IN',
+      ); // Replace 'com.yourappname' with your app’s package name
+    } else {
+      Linking.openURL(
+        'https://apps.apple.com/in/app/ilo-captain/id6749893583',
+      );
+    }
+  };
+  useEffect(() => {
+    (async () => {
+      const appControll = await initiateAppControllRemote();
+      console.log(
+        'appControll?.ios_latest_version',
+        appControll,
+        versioncode,
+      );
+      const latestVersion =
+        Platform.OS === 'ios'
+          ? // ?"1.0.6"
+            appControll?.data?.ios_version_name
+          : // '1.0'
+            // : appControll?.andriod_latest_version;
+            appControll?.data?.android_version_name;
+      // '1.10';
 
+      if (latestVersion && latestVersion !== versioncode) {
+        setUpdateAvailable(true);
+      }
+      console.log('latestVersion', latestVersion);
+      console.log('versioncode', versioncode);
+    })();
+  }, []);
   return (
     <GestureHandlerRootView style={[tailwind('')]}>
-      <SafeAreaView  style={[tailwind('h-full'),{}]}>
+      <SafeAreaView style={[tailwind('h-full'), {}]}>
         <StatusBar barStyle={'dark-content'} backgroundColor={'#FFDA00'} />
         <Host>
           <Provider store={store}>
@@ -115,7 +155,12 @@ const App: () => Node = () => {
                 <View style={[tailwind('flex-1 items-center')]}>
                   <Image
                     resizeMode="contain"
-                    style={{width: width / 2, height: height / 2,tintColor:"#FFDA00"}} tintColor={'#FFDA00'}
+                    style={{
+                      width: width / 2,
+                      height: height / 2,
+                      tintColor: '#FFDA00',
+                    }}
+                    tintColor={'#FFDA00'}
                     source={require('./assets/images/offline.png')}
                   />
 
@@ -139,14 +184,20 @@ const App: () => Node = () => {
                       {top: 20},
                     ]}>
                     <TouchableOpacity
-                      style={[tailwind(' py-4 rounded-2xl bg-secondary'),{width:"48%"} ,]}
+                      style={[
+                        tailwind(' py-4 rounded-2xl bg-secondary'),
+                        {width: '48%'},
+                      ]}
                       onPress={appRestart}>
                       <Text style={[tailwind('text-center   text-black')]}>
                         Retry
                       </Text>
                     </TouchableOpacity>
                     <TouchableOpacity
-                      style={[tailwind('py-4 bg-red-500 rounded-2xl ml-2'),{width:"48%"}]}
+                      style={[
+                        tailwind('py-4 bg-red-500 rounded-2xl ml-2'),
+                        {width: '48%'},
+                      ]}
                       onPress={openSettings}>
                       <Text style={[tailwind('text-center text-white')]}>
                         Go to settings
@@ -154,18 +205,78 @@ const App: () => Node = () => {
                     </TouchableOpacity>
                   </View>
                 </View>
+              ) : updateAvailable && !dismissedUpdate ? ( // Check if update is available and not dismissed
+                <View
+                  style={tailwind(
+                    'bg-white h-full flex-col justify-center items-center',
+                  )}>
+                  <Image
+                    source={assets_manifest?.Update1}
+                    style={[
+                      tailwind(''),
+                      {resizeMode: 'contain', width: '100%', height: '40%'},
+                    ]}
+                  />
+
+                  {/* <Icon name="cloud-download-outline" size={100} color="black" /> */}
+                  <Text
+                    style={[
+                      tailwind('font-medium text-black font-14 text-center '),
+                      {marginTop: '10%'},
+                    ]}>
+                   iLo upgraded – because you deserve the best.
+                  </Text>
+                  {/* <View  style={[tailwind('flex-row')]}> */}
+                  <TouchableOpacity
+                    activeOpacity={0.9}
+                    onPress={openStore}
+                    style={[
+                      tailwind(
+                        'bg-secondary mt-5 rounded-lg flex-row justify-center items-center',
+                      ),
+                      {paddingVertical: 14, paddingHorizontal: 28, margin: 12}, // bigger button
+                    ]}>
+                    <Icon name="download-outline" color="black" size={22} />
+                    <Text
+                      style={tailwind(
+                        'font-bold text-black text-center px-3 uppercase font-15',
+                      )}>
+                      Update Now
+                    </Text>
+                  </TouchableOpacity>
+                  {Platform.OS === 'ios' ? (
+                    <TouchableOpacity
+                      activeOpacity={0.9}
+                      onPress={() => setDismissedUpdate(true)}
+                      style={[
+                        tailwind(
+                          'bg-black mt-3 rounded-lg flex-row justify-center items-center',
+                        ),
+                        {paddingVertical: 8, paddingHorizontal: 16, margin: 6}, // smaller button
+                      ]}>
+                      <Icon name="close-outline" color="white" size={16} />
+                      <Text
+                        style={tailwind(
+                          'font-regular text-white text-center px-2 uppercase font-12',
+                        )}>
+                        No Thanks
+                      </Text>
+                    </TouchableOpacity>
+                  ) : null}
+
+                  {/* </View> */}
+                </View>
               ) : (
                 <RootNavigation />
               )}
             </QueryClientProvider>
           </Provider>
-                  <Toast config={toastConfig} />
-
+          <Toast config={toastConfig} />
         </Host>
         {/* <View style={{bottom: '30%'}}> */}
         {/* </View> */}
       </SafeAreaView>
-     </GestureHandlerRootView>
+    </GestureHandlerRootView>
   );
 };
 

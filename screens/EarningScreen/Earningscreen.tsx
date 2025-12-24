@@ -32,11 +32,14 @@ import Geolocation from 'react-native-get-location';
 import {acquireGPSPermission, errorBox, infoBox} from '../../workers/utils';
 import {razorPayObjCreator} from '../../workers/orderObjCreator';
 import RazorpayCheckout from 'react-native-razorpay';
+import store from '../../store';
 export default function EarningScreen() {
   const {width} = Dimensions.get('window');
   const [popup, setpopup] = useState(false);
   const [TurnOnLoad, setTurnOnLoad] = useState(false);
   const [navigated, setNavigated] = useState(null);
+  const AppControll = store.getState().user.appcontrol;
+
   const [location, setLocation] = useState({
     latitude: 0,
     longitude: 0,
@@ -131,6 +134,12 @@ export default function EarningScreen() {
  
     if (getProfile?.data) {
       setNavigated(getProfile?.data);
+    }
+    const limit = Number(AppControll?.admin_commission_limt);
+    if (getProfile?.data?.admin_commision >= limit) {
+      setpopup(true);
+    } else {
+      setpopup(false);
     }
     let permission = await acquireGPSPermission();
     if (permission.status) {

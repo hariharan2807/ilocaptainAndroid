@@ -23,6 +23,7 @@ export default function MyRides() {
   const [popup, setpopup] = useState(false);
   const [TurnOnLoad, setTurnOnLoad] = useState(false);
   const [navigated, setNavigated] = useState(null);
+  
   const [location, setLocation] = useState({
     latitude: 0,
     longitude: 0,

@@ -247,7 +247,7 @@ export default function RiderOrderList() {
           await geRazorpayPaymentStatusremote({
             razorpay_order_id: razorpayOrderId,
             razorpay_payment_id: success.razorpay_payment_id,
-            status: 'true',
+            status: true,
           });
           DriverStatus('1');
         })
@@ -255,7 +255,7 @@ export default function RiderOrderList() {
           const obj = {
             razorpay_order_id: razorpayOrderId,
             razorpay_payment_id: err?.razorpay_payment_id ?? null,
-            status: 'false',
+            status: false,
           };
           await geRazorpayPaymentStatusremote(obj);
         });

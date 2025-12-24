@@ -78,7 +78,6 @@ export default function DashboardScreen() {
     {refetchInterval: 2000},
   );
   const SchedlewOrder = useQuery(['geSchedlueremote'], geSchedlueremote);
-  // console.log('CartState', CartState);
 
   useFocusEffect(
     useCallback(() => {
@@ -98,7 +97,7 @@ export default function DashboardScreen() {
   useFocusEffect(
     useCallback(() => {
       requestLocationPermission();
-    }, [TurnOnLoad, locationOn]),
+    }, [TurnOnLoad, locationOn,navigated?.admin_commision]),
   );
   useEffect(() => {
     requestLocationPermission();
@@ -113,10 +112,17 @@ export default function DashboardScreen() {
     }
 
     setNavigated(getProfile?.data);
-    console.log(
-      'getProfile?.data?.driver_online_status',
-      getProfile?.data?.driver_online_status,
-    );
+    // console.log(
+    //   'getProfile?.data?.driver_online_statussss',
+    //   getProfile?.data?.admin_commision,
+    // );
+    const limit = Number(AppControll?.admin_commission_limt);
+    if (getProfile?.data?.admin_commision >= limit) {
+      setpopup(true);
+    } else {
+      setpopup(false);
+    }
+
     if (getProfile?.data?.driver_online_status == '0') {
       setSelected('2');
       errorBox('You are Off Duty');
@@ -309,6 +315,7 @@ export default function DashboardScreen() {
   const PayNow = async () => {
     try {
       setpopup(false);
+
       let razorpayOrderId = null;
       const Respose1 = await geRazorPayremote({
         amount: navigated?.admin_commision,
@@ -322,18 +329,24 @@ export default function DashboardScreen() {
       );
       RazorpayCheckout.open(rzOrder)
         .then(async (success: any) => {
+           setpopup(false);
+
           await geRazorpayPaymentStatusremote({
             razorpay_order_id: razorpayOrderId,
             razorpay_payment_id: success.razorpay_payment_id,
-            status: 'true',
+            status: "true",
           });
         })
         .catch(async (err: any) => {
+          setpopup(true)
+
           const obj = {
             razorpay_order_id: razorpayOrderId,
             razorpay_payment_id: err?.razorpay_payment_id ?? null,
-            status: 'false',
+            status: "false",
           };
+          console.log("objobjobjobjobj",obj)
+
           await geRazorpayPaymentStatusremote(obj);
         });
     } catch (error) {

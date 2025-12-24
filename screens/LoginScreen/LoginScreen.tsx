@@ -61,6 +61,7 @@ export default function LoginScreen() {
         const getlogin = await getLoginremote({mobile_number: Mobile});
         setLoading(false);
         if (getlogin?.status == 200) {
+          console.log("getlogin?.data?.data",getlogin?.data?.data)
           setLoading(false);
           dispatch(saveJWTTokenAction(getlogin?.data?.data?.token));
           navigation.navigate('OtpScreen', {

@@ -46,9 +46,6 @@ export const ModalComp = (props: prototype) => {
           </View>
           <Text style={[tailwind('text-black mb-2 mt-1'),{fontSize:30}]}>₹ {props?.admin_commision}</Text>
         {/* Warning Icon or Alert Image */}
-        
-
-
         {/* Title */}
         <Text
           style={tailwind(

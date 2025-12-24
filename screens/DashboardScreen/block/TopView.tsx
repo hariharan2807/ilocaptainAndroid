@@ -18,7 +18,7 @@ interface Prototype {
 }
 const TopView = (props: Prototype) => {
   const UserInfo = useSelector(state => state.user.user);
-  console.log('props?.selected', props?.selected);
+  // console.log('props?.selected', props?.selected);
   const navigation = useNavigation();
   const Onpress = () => {
     props?.DriverStatus('0');

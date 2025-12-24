@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0021855D1AF0445DB6FC3C71 /* Milliard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32D73A2E74284D12B2BA070B /* Milliard-SemiBold.otf */; };
 		00E356F31AD99517003FC87E /* iLoCaptainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* iLoCaptainTests.m */; };
-		054D51842DB7A57F0037DF7D /* notification.wav in Resources */ = {isa = PBXBuildFile; fileRef = 054D51832DB7A57F0037DF7D /* notification.wav */; };
 		057C67912E4E01FF00621189 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 057C678A2E4E01FF00621189 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0BFB20F94A29419FBA3509D3 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7031E7452CD4DFFA1A1C93A /* Nunito-Bold.ttf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-iLoCaptain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-iLoCaptain.a */; };
@@ -61,7 +60,6 @@
 		00E356EE1AD99517003FC87E /* iLoCaptainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iLoCaptainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* iLoCaptainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iLoCaptainTests.m; sourceTree = "<group>"; };
-		054D51832DB7A57F0037DF7D /* notification.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = notification.wav; sourceTree = "<group>"; };
 		057C67842E4DDCE200621189 /* ILOCaptionDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = ILOCaptionDebug.entitlements; path = iLoCaptain/ILOCaptionDebug.entitlements; sourceTree = "<group>"; };
 		057C678A2E4E01FF00621189 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		059C7D6F2D08010900496B89 /* iLoCaptainRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = iLoCaptainRelease.entitlements; path = iLoCaptain/iLoCaptainRelease.entitlements; sourceTree = "<group>"; };
@@ -182,7 +180,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				054D51832DB7A57F0037DF7D /* notification.wav */,
 				13B07FAE1A68108700A75B9A /* iLoCaptain */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* iLoCaptainTests */,
@@ -363,7 +360,6 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				2B421BF7BDA4905192F5578A /* PrivacyInfo.xcprivacy in Resources */,
-				054D51842DB7A57F0037DF7D /* notification.wav in Resources */,
 				28DBFBF90D064FD2A3D0B8AB /* Milliard-Bold.otf in Resources */,
 				BC5C98F9288C41A09509EE45 /* Milliard-Light.otf in Resources */,
 				F26C5E9E726D4407B2D92C3F /* Milliard-Medium.otf in Resources */,
@@ -704,7 +700,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = iLoCaptain/ILOCaptionDebug.entitlements;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = V5L22ZZ8D6;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = iLoCaptain/Info.plist;
@@ -715,7 +711,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6;
+				MARKETING_VERSION = 1.7;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -736,7 +732,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = iLoCaptain/iLoCaptainRelease.entitlements;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = V5L22ZZ8D6;
 				INFOPLIST_FILE = iLoCaptain/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = iLoCaptain;
@@ -746,7 +742,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6;
+				MARKETING_VERSION = 1.7;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
